@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Login</h1>
+    </header>
+    <main>
+      <form id="loginForm">
+        <div>
+          <label for="username"></label>
+          <input type="text" id="username" name="username" placeholder="Username"/>
+        </div>
+        <div>
+          <label for="password"></label>
+          <input type="password" id="password" name="password" placeholder="Password" />
+        </div>
+        <div>
+          <button type="submit">Login</button>
+        </div>
+        <p id="errorText" class="error"></p>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2024 My Web Project</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script type="text/javascript"> 
+        function preventBack() { 
+            window.history.forward();  
+        } 
+          
+        setTimeout("preventBack()", 0); 
+          
+        window.onunload = function () { null }; 
+    </script>
+  </body>
+</html>
